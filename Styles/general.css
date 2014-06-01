@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../Images/bg.png) repeat;
+}
+
+#page {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    min-width: 800px;
+    position: relative;
+}
+
+/*######################################################################################################################
+###                                     Общие стилевые настройки шапки сайта                                         ###
+######################################################################################################################*/
+
+    #header {
+        display: block;
+        width: inherit;
+        margin: 0px;
+        padding: 0px;
+        min-width: inherit;
+    }
+
+        #header #logo_href {
+            display: inline;
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            height: inherit;
+        }
+
+        #header #menu_left {
+            float: left;
+        }
+
+        #header #menu_right {
+            float: right;
+        }
+
+            #header #menu_left a, #header #menu_right a {
+                display: block;
+                position: relative;
+                text-align: center;
+                margin: 0px 1px;
+                color: #FFF;
+                text-decoration: none;
+                font-family: 'Lobster', cursive;
+                text-shadow: 1px 1px 2px #000;
+                letter-spacing: 1px;
+            }
+
+            #header #menu_left a {
+                box-shadow: 2px 5px 10px black;
+                text-shadow: 1px 1px 2px #000;
+            }
+
+            #header #menu_right a {
+                box-shadow: -2px 5px 10px black;
+                text-shadow: -1px 1px 2px #000;
+            }
+
+                #header #menu_left a {
+                    float: right;
+                }
+
+                    #header #menu_left #home {
+                        background: #FF3030;
+                    }
+
+                    #header #menu_left #services {
+                        background: #FFCC01;
+                    }
+
+                    #header #menu_left #news {
+                        background: #77c816;
+                    }
+
+                #header #menu_right a {
+                    float: left;
+                }
+
+                    #header #menu_right #reviews {
+                        background: #0096ff;
+                    }
+
+                    #header #menu_right #contacts {
+                        background: #FF8C00;
+                    }
+
+                    #header #menu_right #about_us {
+                        background: #a670c6;
+                    }
+
+div#phone, div#address {
+    position: absolute;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #104E8B;
+}
+
+/*######################################################################################################################
+###                                  Общие стилевые настройки содержимого страницы                                   ###
+######################################################################################################################*/
+
+    #content {
+        display: block;
+        width: inherit;
+        min-width: inherit;
+    }
