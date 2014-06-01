@@ -96,10 +96,28 @@ body {
 
 div#phone, div#address {
     position: absolute;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Andika', sans-serif;*/
+    /*font-family: 'Neucha', cursive;*/
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Kelly Slab', cursive;
+    /*font-family: 'Didact Gothic', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
     color: #104E8B;
+}
+
+/*div #address {*/
+    /*top: 15px;*/
+    /*padding-right: 50%;*/
+    /*right: 70px;*/
+/*}*/
+
+div #phone {
+    /*font-weight: 600;*/
+    /*top: 27px;*/
+    /*margin-left: 50%;*/
+    /*left: 100px;*/
 }
 
 /*######################################################################################################################

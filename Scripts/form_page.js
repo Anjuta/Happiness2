@@ -34,11 +34,16 @@ $(function() {
         a_services_height = parseInt(header_height / 3.5);
         a_home_height = parseInt(header_height / 2.4);
         a_news_height = parseInt(header_height / 6.4);
+        address_right = parseInt(img_left * 0.17)
+        address_top = parseInt(header_height * 0.08)
+        phone_left = parseInt(img_left * 0.21/*0.27*/)
+        phone_top = address_top + parseInt(a_font_size * 0.6)
         $('#menu_left a, #menu_right a').css({
             'width': inset_width + 'px',
             'font-size': a_font_size + 'px',
             'padding': a_padding_top + 'px' + ' 0px '+ a_padding_bottom + 'px'
         });
+
         $('#services, #contacts').css({
             'height': a_services_height + 'px',
             'top': header_height - a_services_height - a_padding_bottom - a_padding_top + 1 + 'px'
@@ -47,13 +52,22 @@ $(function() {
             'height': a_home_height + 'px',
             'top': header_height - a_home_height - a_padding_bottom - a_padding_top + 1 + 'px'
         });
-
         $('#news, #reviews').css({
             'height': a_news_height + 'px',
             'top': header_height - a_news_height - a_padding_bottom - a_padding_top + 1 + 'px'
         });
+
         $('#address, #phone').css({
             'font-size': a_font_size + 'px'
+        })
+        $('#address').css({
+            'right': address_right+'px',
+            'top': address_top+'px'
+        })
+        $('#phone').css({
+            'left': phone_left+'px',
+            'top':  phone_top+'px',
+            'font-size': parseInt(a_font_size*1.2) + 'px'
         })
     }
 
