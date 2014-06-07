@@ -1,0 +1,9 @@
+#content {
+    background-color:  #FFF;
+    border-color: #FF3030;
+    /*margin: 6px;*/
+}
+
+#content img{
+    width: 100%;
+}

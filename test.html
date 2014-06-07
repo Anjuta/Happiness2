@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Примеры. Размещение карты на странице.</title>
+    <!--
+        Подключаем API карт
+        Параметры:
+          - load=package.standard - основные компоненты;
+	      - lang=ru-RU - язык русский.
+    -->
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+<script type="text/javascript">
+var myMap;
+
+// Дождёмся загрузки API и готовности DOM.
+ymaps.ready(init);
+
+function init () {
+    // Создание экземпляра карты и его привязка к контейнеру с
+    // заданным id ("map").
+    myMap = new ymaps.Map('map', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center:[56.822266, 60.621277], // Москва
+        zoom:17
+    });
+    myMap.controls
+        // Кнопка изменения масштаба.
+        .add('zoomControl', { left: 5, top: 5 })
+        // Список типов карты
+        .add('typeSelector')
+        // Стандартный набор кнопок
+        .add('mapTools', { left: 35, top: 5 });
+    document.getElementById('destroyButton').onclick = function () {
+        // Для уничтожения используется метод destroy.
+        myMap.destroy();
+    };
+    myPlacemark = new ymaps.Placemark([56.822266, 60.621277], {
+            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+            balloonContentHeader: "'Счастье Есть'",
+            balloonContentBody: "Вход",
+//            balloonContentFooter: "Подвал",
+            hintContent: "Хинт метки"
+        });
+    myMap.geoObjects.add(myPlacemark);
+
+}
+</script>
+</head>
+
+<body>
+    <div id="map" style="width:700px; height:400px"></div>
+    <input type="button" id="destroyButton" value="Удалить карту"/>
+</body>
+
+</html>
