@@ -1,0 +1,34 @@
+#content {
+    background-color:  #FFFACD;
+    border-color: #FF8C00;
+    /*margin: 6px;*/
+}
+
+#text_contact {
+    float: left;
+    /*padding: 20px;*/
+    color: #8B0000;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#map {
+    float: right;
+    /*width: 580px;*/
+    /*height: 480px;*/
+    /*margin: 10px;*/
+    border: 3px groove #FF8C00;
+}
+
+#text_contact h1 {
+    color: #DF0000;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-size: 25px;
+}
+
+#text_contact h2 {
+    /*font-weight: 500;*/
+    color: #EE2C2C;
+    font-size: 23px;
+}

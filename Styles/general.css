@@ -8,7 +8,7 @@ body {
     display: block;
     margin: auto;
     padding: 0px;
-    min-width: 800px;
+    min-width: 783px;
     position: relative;
 }
 
@@ -44,7 +44,6 @@ body {
                 display: block;
                 position: relative;
                 text-align: center;
-                margin: 0px 1px;
                 color: #FFF;
                 text-decoration: none;
                 font-family: 'Lobster', cursive;
@@ -53,11 +52,13 @@ body {
             }
 
             #header #menu_left a {
+                margin-right: 2px;
                 box-shadow: 2px 5px 10px black;
                 text-shadow: 1px 1px 2px #000;
             }
 
             #header #menu_right a {
+                margin-left: 2px;
                 box-shadow: -2px 5px 10px black;
                 text-shadow: -1px 1px 2px #000;
             }
@@ -96,18 +97,39 @@ body {
 
 div#phone, div#address {
     position: absolute;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Andika', sans-serif;*/
+    /*font-family: 'Neucha', cursive;*/
+    /*font-family: 'Bad Script', cursive;*/
+    font-family: 'Kelly Slab', cursive;
+    /*font-family: 'Didact Gothic', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
     color: #104E8B;
+}
+
+/*div #address {*/
+    /*top: 15px;*/
+    /*padding-right: 50%;*/
+    /*right: 70px;*/
+/*}*/
+
+div #phone {
+    /*font-weight: 600;*/
+    /*top: 27px;*/
+    /*margin-left: 50%;*/
+    /*left: 100px;*/
 }
 
 /*######################################################################################################################
 ###                                  Общие стилевые настройки содержимого страницы                                   ###
 ######################################################################################################################*/
 
-    #content {
-        display: block;
-        width: inherit;
-        min-width: inherit;
-    }
+#content {
+    position: absolute;
+    /*width: inherit;*/
+    border: 6px solid;
+    display: block;
+    min-width: 788;
+    margin-bottom: 70px;
+}
